@@ -1,0 +1,8 @@
+{
+  "serverUrl": "http://localhost:3029",
+  "projectId": "5Wsk9AdH1uht8cxfyx8FS",
+  "apiKeyRef": {
+    "kind": "env",
+    "name": "COZNT_API_KEY_5WSK9ADH1UHT8CXFYX8FS"
+  }
+}

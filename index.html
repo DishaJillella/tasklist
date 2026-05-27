@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eco Friendly</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="dashboard" aria-labelledby="dashboard-title">
+        <div class="dashboard__header">
+          <div>
+            <p class="eyebrow">Daily tracker</p>
+            <h1 id="dashboard-title">Eco Friendly</h1>
+          </div>
+          <div class="points-card" aria-live="polite">
+            <span class="points-card__label">Green points</span>
+            <strong id="totalPoints">0</strong>
+          </div>
+        </div>
+
+        <div class="summary-strip" aria-label="Today's progress">
+          <div>
+            <span class="summary-strip__value" id="activityCount">0</span>
+            <span class="summary-strip__label">activities today</span>
+          </div>
+          <div>
+            <span class="summary-strip__value" id="latestPoints">0</span>
+            <span class="summary-strip__label">last points earned</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="workspace" aria-label="Activity tracking workspace">
+        <form class="activity-form" id="activityForm" novalidate>
+          <div class="section-heading">
+            <h2>Add activity</h2>
+            <p>Choose an eco-friendly action or enter your own.</p>
+          </div>
+
+          <label for="activitySelect">Activity</label>
+          <select id="activitySelect" name="activity">
+            <option value="">Select an activity</option>
+            <option value="bike">Used bicycle</option>
+            <option value="electricity">Saved electricity</option>
+            <option value="recycle">Recycled waste</option>
+            <option value="bag">Used reusable bag</option>
+            <option value="custom">Custom activity</option>
+          </select>
+
+          <div class="custom-field" id="customField" hidden>
+            <label for="customActivity">Custom activity</label>
+            <input id="customActivity" name="customActivity" type="text" maxlength="60" placeholder="Example: Planted herbs">
+          </div>
+
+          <p class="form-message" id="formMessage" role="alert"></p>
+          <button type="submit">Add Activity</button>
+        </form>
+
+        <section class="activity-panel" aria-labelledby="activity-list-title">
+          <div class="section-heading">
+            <h2 id="activity-list-title">Daily activity list</h2>
+            <p id="listStatus">No activities yet.</p>
+          </div>
+          <ul class="activity-list" id="activityList"></ul>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

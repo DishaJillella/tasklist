@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "coznt": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "http://localhost:3029/install/coznt-mcp-0.1.0.tgz"
+      ],
+      "env": {
+        "COZNT_URL": "http://localhost:3029",
+        "COZNT_API_KEY": "${COZNT_API_KEY_5WSK9ADH1UHT8CXFYX8FS}"
+      }
+    }
+  }
+}
